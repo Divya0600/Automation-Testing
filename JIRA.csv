@@ -1,0 +1,251 @@
+ID,Issue Type,Issue key,Description,Summary,Assignee,Reporter,Priority,Text 1,Text 2,Text 3,Text 4,Checkboxes 3,Multiple Select List 3,Number 2
+6330223,Test,COMNIGI-58292,"Testataan, että ylläpitokäyttöliittymän istunto vanhenee automaattisesti.",Istunnon vanheneminen,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,6326599
+6330225,Test,COMNIGI-58293,Jira:[WELDEV-83631|https://jira.cgisaas.fi/browse/WELDEV-83631 ]Merkinnän sisällön määrittelyversion muuttuminen päivityksen yhteydessä,WELDEV-83631 Merkinnän sisällön määrittelyversion muuttuminen päivityksen yhteydessä,hanna-maija.naumanen@cgi.com,hanna-maija.naumanen@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,6479680
+6330222,Test,COMNIGI-58294,"Varmista, että liittymistavan voi asettaa organisaatiokohtaisesti.
+
+Varmista, että liittymistavan voi vaihtaa.",Liittymistapa,katri.lamminen@cgi.com,katri.lamminen@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,5386619
+6330250,Test,COMNIGI-58295,Jira:[COMNIGI-41092|https://proactioneu.ent.cgi.com/jira/browse/COMNIGI-41092],COMNIGI-41092 Havainto 91 - Laboratorio templateId puuttuu asiakirjalta,satu.huusko@cgi.com,katri.lamminen@cgi.com,Medium,HealthWeb Edustakanta,Luonnos,,,,,6833630
+6443212,Test,COMNIGI-58279,"Testataan, että asiakirjan henkilötunnuksen vaihtamisessa asiakirjalta siivotaan pois contentsCode-elementit, joissa ei ole sisältöä.
+
+Tausta: vanhat Pegasos-versiot ovat tuottaneet tällaisia, ja Edustakanta ja KELA ovat hyväksyneet ne.
+
+ja KELA ei enää hyväksy tapausta, ja Edustakanta siivoaa sellaiset pois uusilta asiakirjoilta.
+
+Mutta jos Edustakanta mitätöi asiakirjan, joka on jo ehditty arkistoimaan virheellisenä, ei siivousta tehdä, ja KELA ei sitten hyväksy korjausta.",Tyhjän contentsCoden korjaus,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,6640664
+6069854,Test,COMNIGI-58277,"Kun hoitoasiakirja mitätöidään siksi, että sen palvelutapahtuma on mitätöity, ei mitätöidylle asiakirjalle kopioidu arkiston palauttamaa authorization-elementtiä.",authorization-elementin poisto hoitoasiakirjan mitätöinnissä,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Luonnos,,,Test: Automated,,6666473
+6330254,Test,COMNIGI-58278,"Jossain tilanteessa hoitoasiakirjan päivittämiseen liittyvät fragmentit voivat nousta Edustakannan käsittelyyn väärässä järjestyksessä. Tälläisia tilanteita voivat olla esimerkiksi arkistointivirhe yksittäisen version käsittelyssä tai lähes samanaikaisesti eri käyttäjien taholta tapahtuneet muutokset saman merkinnän osalta. Normaalisti tallaiset tilanteet eivät sekoita Edustakantaa, mutta jos merkinnän päivittämisen yhteydessä vaihdetaan palvelutapahtuma, niin tämä saattaa synnyttää virhetilanteen.
+
+Parannettu Edustakannan toiminnallisuutta siten, että fragmenttien käsittelyn yhteydessä tarkastetaan, että onko samalle fragmentille keskeneräisiä töitä toisen palvelutapahtuman puitteissa.
+
+JIRA:
+
+[WELDEV-120742|https://jira.cgisaas.fi/browse/WELDEV-120742]Vikatilanne hoitomerkinnän palvelutapahtuman vaihdon yhteydessä",Vikatilanne hoitomerkinnän palvelutapahtuman vaihtamisen yhteydessä,juhani.pakanen@cgi.com,juhani.pakanen@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,6551769
+6330256,Test,COMNIGI-58280,"Muodostetaan asiakirja
+
+Konffataan sääntöihin rekisterinpitäjän perusteella kontrollikehyksen palvelun antaja, joka poikkeaa organisaation ohjaustiedoissa olevasta arvosta
+
+Arkistoidaan
+
+Tarkastetaan arkistointisanoman kontrollikehys",Kontrollikehyksen palvelun antajan valinta,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Luonnos,,,Test: Automated,,6666483
+6330253,Test,COMNIGI-58281,"Testataan tilanne, missä palvelutapahtuma-asiakirjaa on muokattu muualla.
+
+Muodostetaan palvelutapahtuma-asiakirja
+
+Muodostetaan korjattu palvelutapahtuma-asiakirja asiakirjajonoon
+
+Vaihdetaan arkistoidun palvelutapahtuma-asiakirjan id
+
+Arkistoidaan korjattu palvelutapahtuma-asiakirja
+
+Havaitaan muualla tapahtunut muutos
+
+Jonotetaan uudelleen asiakirjan muodustus siten, että korvataan arkistossa uusin versio",Muualla muutetun palvelutapahtuma-asiakirjan korjaus,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,6647863
+6330251,Test,COMNIGI-58303,Jira:[COMNIGI-23473|https://proactioneu.ent.cgi.com/jira/browse/COMNIGI-23473],COMNIGI-23475 Vaadin 7 -päivitys,katri.lamminen@cgi.com,katri.lamminen@cgi.com,Medium,HealthWeb Edustakanta,Luonnos,,,,,6779369
+6330257,Test,COMNIGI-58304,"Ympäristössä käytetään linux-pohjaista kirjautumista. Testataan, että kirjautuminen toimii, vaikka käyttäjä kuuluisi käyttäjäryhmään, missä on paljon (liikaa) jäseniä.
+
+Ei testata sitä, että kirjautuminen perustuu tuohon isoon käyttäjäryhmään. Kirjautuminen perustuu johonkin pienempään käyttäjäryhmään, mutta ison käyttäjäryhmän olemassa olo lisäksi ei saa estää kirjautumista.","Linux-kirjautuminen, järjestelmässä iso käyttäjäryhmä",arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,6569580
+6330258,Test,COMNIGI-58305,Jira:[COMNIGI-28178|https://proactioneu.ent.cgi.com/jira/browse/COMNIGI-28178],COMNIGI-28178 Tiedonsiirto klusteroinnissa ei toimi,katri.lamminen@cgi.com,katri.lamminen@cgi.com,Medium,HealthWeb Edustakanta,Luonnos,,,,,6799496
+6329944,Test,COMNIGI-58307,"Testataan, että koodistojen päivitys onnistuu edustakannassa.",Koodistojen päivitys,katri.lamminen@cgi.com,katri.lamminen@cgi.com,Medium,HealthWeb Edustakanta,Luonnos,,,,,6742374
+6351788,Test,COMNIGI-58306,"Testataan, että onnistuu tallentaa uusi asiakirja, joka viittaa järjestelmään juuri tallennettuun uuteen suorituspaikkaan.
+
+Tämä testaa järjestelmän suorituskykyä parantavan organisaatiovälimuistin ongelman korjauksen
+
+- Organisaatiovälimuistissa on uusimman organisaatioversion tiedot
+
+- Järjestelmän lisätään uusi suorituspaikka
+
+- Jonka seurauksena syntyy uusi organisaatioversio, ja vanha organisaatioversio päättyy
+
+- Välimuisti ei tässä yhteydessä päivity
+
+- Jolloin välimuistista jo alussa mainittu ""uusin organisaatioversio"" ei enää olekaan uusin
+
+- Jolloin sen perusteella tehtävä suorituspaikan haku ei toimi, koska suorituspaikka liittyy uudempaan versioon",Uuden suorituspaikan löytyminen tallennuksen jälkeen,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Luonnos,,,Test: Automated,,6532793
+6351784,Test,COMNIGI-58282,"Testataan tilanne, missä potilaalle tulee hetun vaihto, ja potilaalla on asiakirjoja useissa eri rekistereissä (mutta samalla rekisterinpitäjällä).
+
+Päivitettävän asiakirjan haku tehdään oikealla rekisterikoodilla.","Hetun vaihto, kun asiakirjoja on useissa rekistereissä",arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,6748271
+6351783,Test,COMNIGI-58283,"Testataan, että voidaan mitätöidä merkintä, jolla on lisänäkymä",Lisänäkymämerkinnän mitätöinti,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,6380373
+6351786,Test,COMNIGI-58300,"Testataan, että linux-pohjainen kirjautuminen toimii.",Linux-pohjainen kirjautuminen,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,6569582
+6351787,Test,COMNIGI-58301,"Testitapaus, joka kattaa kaikki automaattiset testit. Tämä voidaan liittää version julkaisun testisuunnitelmaan, ja kuitata kerralla kaikki ajetuksi.
+
+Ajetuksi kuittaamisen lisäksi testisuunnitelmaan on liitettävä automaattitestien tulostiedostot, jotka löytyvät työtilan hakemistosta src/_build/work/tests, ja todettava mistä haarasta ja teknisestä versionumerosta testit on ajettu.",Automaattitestit,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,6510396
+6351790,Test,COMNIGI-58302,"Testataan tutkivan testauksen menetelmällä web-käyttöliittymän toiminnot teknologiapäivityksen jäljiltä:
+
+# Kirjautuminen
+# Toimintovalikko
+# Muistiinpanon hallinta
+# Taustapalveluiden hallinta
+# Tausta-ajojen hallinta
+# Sanomalokin selaus
+# Sanomaliikenteen tapahtumalokin selaus",WELDEV-58505: web-käyttöliittymän teknologiapäivityksen testaus,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Valmis katselmoitavaksi,,,,,6654080
+6351789,Test,COMNIGI-58308,Testataan tiivistelmäasiakirjan päiväyksen päivittyminen,Tiivistelmäasiakirjan päiväys,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,4888201
+6333146,Test,COMNIGI-58319,"Liityntäpisteen ongelmatilanne voidaan CGI:n testiympäristössä simuloida niin, että vastausta Potilastiedon arkistosta odotetaan 0 sekuntia (Muuta Edustakannan asetuksissa arkistoinnin sanomaliittymän ""net read timeout"" -parametri arvoon 0). Simulointi on tarpeen, koska CGI:llä ei ole erillistä liityntäpistettä. Tuotannon virhetilanteessa liityntäpiste palauttaa Edustakannalle SOAP FAULT -virheen arkistointiyrityksissä, joten tämä simulaatio ei täysin vastaa tuota virhetilannetta.",Hyväksymistesti - WELDEV-56075 - Valmiin asiakirjan uudelleen arkistointi epäonnistuu,pasi.a.heikkinen@cgi.com,pasi.a.heikkinen@cgi.com,Medium,HealthWeb Edustakanta,Valmis katselmoitavaksi,,,,,6376138
+6333147,Test,COMNIGI-58309,"Testataan asiakirjojen muodostuminen ja arkistointi, kun merkinnöillä on käytetty erilaisia erikoismerkkejä.
+
+Testataan seuraavat tapaukset:
+
+# Merkin koodipisteen arvo on suurempi kuin 65535",Erikoismerkit,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,5669812
+6333149,Test,COMNIGI-58298,Testaa tutkivan testauksen menetelmällä fragmenttisiirron sääntöjen ylläpidon toiminnallisuuksia.,Fragmenttisiirtojen sääntöjen ylläpito,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,6500306
+6333156,Test,COMNIGI-58296,"*Jira:* [WELDEV-152267|https://jira.cgisaas.fi/browse/WELDEV-152267]Fragmenttisanoman softwareSupport-tiedot eivät siirry arkistosanomalle
+
+*Esiehdot:* Tämä testiketju tulee testata PTH OMNI360 Kertomus testiympäristössä. Valittuna arkistokelpoinen toimipiste ja potilas. OMNI360 kertomus on käynnitetty.",WELDEV-152267 Fragmenttisanoman softwareSupport-tiedot eivät siirry arkistosanomalle,joni.keskinen@cgi.com,joni.keskinen@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,6581597
+6333145,Test,COMNIGI-58297,Jira:[COMNIGI-41091|https://proactioneu.ent.cgi.com/jira/browse/COMNIGI-41091],COMNIGI-41092 Havainto 90 - Asiakirjalta puuttuu 2016 määrittelyiden mukainen kuvantamisen templateId,satu.huusko@cgi.com,katri.lamminen@cgi.com,Medium,HealthWeb Edustakanta,Luonnos,,,,,6833642
+6333148,Test,COMNIGI-58316,"Testataan, että palvelutapahtuman ja rekisterinpitäjän vaihdon yhteydessä asiakirjan kysely lähtee uudella rekisterinpitäjällä.",Palvelutapahtuman vaihto ja rekisterinpitäjän vaihto,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Luonnos,,,Test: Automated,,6705553
+6333158,Test,COMNIGI-58299,"testataan, että avainten lisäys toimii ja voidaan linkittää varmenteisiin",Avaimen linkitys varmenteeseen,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,6541914
+6333157,Test,COMNIGI-58315,"Testataan, että samalla kertaa tapahtuva henkilötunnuksen ja rekisterinpitäjän vaihto toimii.",Henkilötunnuksen ja rekisterinpitäjän vaihto,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,6541885
+2483301,Test,COMNIGI-58311,"Testataan, että fragmentin tallennuksesta syntyy kuittausrivi, asiakirjan muodostuksesta syntyy kuittausrivi ja asiakirjan arkistoinnista syntyy kuittausrivi.",Kuittaukset,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,6336826
+6450106,Test,COMNIGI-58310,"Arkistoidaan hoitoasiakirja synkronisesti, kun fragmentti on liitetty ulkoisen palvelutapahtuman kontekstifragmentilla.",Hoitoasiakirjan synkroninen arkistointi ulkoisen palvelutapahtuman kontekstifragmentilla,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,5889738
+2483326,Test,COMNIGI-58313,"Testataan palvelutapahtuman vaihto asiakirjalle, kun asiakirjalla on vain yksi merkintä ja ko. merkinnän kontekstifragmentti vaihtuu.",Hoitoasiakirjan palvelutapahtuman vaihto,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,6376241
+2483312,Test,COMNIGI-58312,"Testataan hoitomerkinnän siirto toiseen palvelutapahtumaan silloin, kun merkinnän vanha versio on asiakirjalla, jossa on muita merkintöjä.",Merkinnän palvelutapahtuman siirto,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,6376291
+1463810,Test,COMNIGI-58314,"Testataan tupla-arkistointi tilanteessa, missä asiakirjan hetu vaihdetaan toisen kontekstifragmentin kautta.
+
+Taustalla sovelluksessa ollut virhe, joka esti tämän erikoistilanteen toimimisen.",Tupla-arkistointi + hetun vaihto,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,6659724
+6432699,Test,COMNIGI-58317,"Lähetetään Edustakantaan fragmentteja, jossa on asiakirjan tuottanut ohjelmisto, ja fragmentteja jossa ei ole.
+
+Testataan, että asiakirjat muodostuvat fragmenttien perusteella oikein. Puuttuvalle ohjelmistolle tulee ohjelmisto kontekstifragmentilta, ja tapaukset puuttuva ja asetettu ohjelmisto eivät päädy samalle asiakirjalle.",Asiakirjan tuottanut ohjelmisto,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Valmis katselmoitavaksi,,,Test: Automated,,6683317
+6432700,Test,COMNIGI-58318,"Testataan tupla-arkistoinnin tarkstuksen toiminta ostopalvelutilanteessa.
+
+Testi on suoritettava KELAn asiakastestiympäristöä vasten, jotta voidaan olla varmoja KELAn arkiston rajapintojen vasteista ja Edustakannan reagonnista niihen. Tästä syystä testi ei ole automaattitesti.",Tupla-arkistoinnin tarkastus ostopalvelussa,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,6375749
+6432701,Test,COMNIGI-58289,Jira:[WELDEV-69089|https://jira.cgisaas.fi/browse/WELDEV-69089 ]Mitätöidyn asiakirjan näkymän title-elementissä pitkä nimi katoaa edustakannassa,WELDEV-69089 Mitätöidyn asiakirjan näkymän title-elementissä pitkä nimi katoaa edustakannassa,hanna-maija.naumanen@cgi.com,hanna-maija.naumanen@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,6426002
+2483338,Test,COMNIGI-58288,"Kuvaus: Edustakanta kopioi mitätöintiasiakirjalle author.time-kentän arvon asiakirjan sisällöstä. Jos asiakirjan kuvailutiedoissa on author, on ajan oltava sekunnin tarkkuudella mutta asiakirjan sisällössä se saa olla minuutin tarkkuudella.
+
+Vaihdetaan timeksi aina nullFlavor.
+
+Jira:[WELDEV-83625|https://jira.cgisaas.fi/browse/WELDEV-83625]Mitätöintiasiakirjan authorin time",WELDEV-83625 Mitätöintiasiakirjan authorin time,hanna-maija.naumanen@cgi.com,hanna-maija.naumanen@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,6439708
+6432702,Test,COMNIGI-58290,"Kuvaus: palvelutapahtuma-asiakirjoilla <title>Palvelutapahtuma-asiakirja</title>.
+
+Jira:[WELDEV-76827|https://jira.cgisaas.fi/browse/WELDEV-76827]256, A1 Palvelutapahtuma-asiakirjan title","WELDEV-76827 256, A1 Palvelutapahtuma-asiakirjan title",hanna-maija.naumanen@cgi.com,hanna-maija.naumanen@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,6439730
+6353438,Test,COMNIGI-58291,"Testataan kirjautumisen syyn toiminta.
+
+Testitapauksen suorittaminen edellyttää Edustakanta-asennuksen parametrointia, joka on tehtävä ssh-yhteydellä palvelimeen. Tarvittavat asetukset on dokumentoitu Edustakannan asennusohjeessa.",Kirjautumisen syy,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,6361155
+6626683,Test,COMNIGI-58276,"Testataan, että ruotsinkielisestä lähdedatasta muodostuu ruotsinkielinen asiakirja.",Ruotsinkielisen asiakirjan muodostaminen,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,6425226
+1464178,Test,COMNIGI-58273,Lisätään tietokantaan kontekstifragmentteja eri päivämäärillä ja töillä ja ilman. Testataan siivous taulun alusta loppuun.,Kontekstifragmenttien siivous,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,6383287
+1464196,Test,COMNIGI-58275,"Testataan, että fragmentin tilannekuvan haku erillisellä kyselysanomalla toimii.",Fragmentin tilannekuvan haku,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,6481911
+1464169,Test,COMNIGI-58274,"Testataan, että kontekstifragmentilla määritelty Authorization siirtyy palvelutapahtuma-asiakirjalle.",Authorization-elementin välittäminen kontekstifragmentilta palvelutapahtuma-asiakirjalle,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,6422342
+1464205,Test,COMNIGI-58272,"Testiajo, joka arkistoi sekä yksityisen terveydenhuollon organisaation että vuokralaisorganisaation tietoja ja tarkastaa, että arkistosanomille tulee oikea liittymistapa.",Yksityisen terveydenhuollon liittymistavan päättely,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,6336694
+1464219,Test,COMNIGI-58271,"Testataan, että Edustakanta tuottaa asiakirjat vuoden 2016 määrittelyiden mukaisesti, kun säännöissä on niin parametroitu.",Vuoden 2016 määrittelyjen mukaisuuden testaus,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,6406211
+1464286,Test,COMNIGI-58260,"Adapterin toiminnallisuuksien tutkiva testaus. Seuraavat stepit.
+
+Perustetaan uusi potilas ja resurssi.
+
+Kirjaudutaan uudella resurssilla järjestelmään.
+
+Kirjataan potilaalle tietoja
+
+- kertomusteksti
+
+- PEPO-teksti
+
+- riskitieto
+
+- diagnoosi (pysyvä)
+
+- lääkemääräys
+
+- A-todistus
+
+- terveystottumus
+
+- labrapyyntö ja -tuloksia
+
+Tarkastetaan Pegasoksen asiakirjojen selaus -toiminnolla, että potilaasta kirjatut tiedot näkyvät oikein alueellisen kertomuksen kautta.
+
+HUOM: tietojen siirrossa voi olla useiden minuuttien viive.
+
+Muutetaan potilaan tiedot sisältävän suorituspaikan nimeä.
+
+Kirjataan potilaalle uusia tietoja (tässä vaiheessa ei korjata aikaisempia tietoja).
+
+Tarkastetaan tietojen siirtyminen asiakirjojen selauksella. Ennen suorituspaikan nimen vaihtoa kirjatut tiedot pitää näkyä vanhalla nimellä. Suorituspaikan nimen vaihdon jälkeen kirjatut tiedot näkyvät uudella nimellä.
+
+Korjataan potilaan aikaisempia kirjauksia.
+
+Tarkastetaan asiakirjojen selauksessa, että korjaukset ovat siirtyneet oikein, ja vanhat versiot eivät ole näkyvissä.",Adapteritoiminnallisuuden testaus,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,6376577
+1464277,Test,COMNIGI-58261,"Testataan kontekstifragmentin ja merkinnän arkistointi, kontekstifragmentin päivitys, merkinnän korjaus ja merkinnän mitätöinti. Testataan vanhanmallisella hetulla jonka välimerkki on '-' sekä myös uusilla hetun välimerkeillä 'Y' ja 'D'.",Perustesti,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,4641645
+1464295,Test,COMNIGI-58267,"Testataan asiakirjojen muodostus, arkistointi ja korjaus ostopalveluna tuotetuista palvelutapahtumista ja hoitomerkinnöistä.",Ostopalveluna tuotettujen asiakirjojen muodostus ja arkistointi,mikko.koivisto@cgi.com,mikko.koivisto@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,5494092
+1464342,Test,COMNIGI-58286,"*Kuvaus:* 2016 määrittelyissä palvelutapahtuman mitätöinnissä on tuotu uutena tietona mitätöivälle asiakirjalle tuotavia tietoja.
+
+Kertomus ja lomakkeet v511, sivu 55 (Palvelutapahtuma-asiakirjan mitätöinti)
+
+*Jira:* [WELDEV-68679|https://jira.cgisaas.fi/browse/WELDEV-68679]238, A2 Yhteistestausvalmiuden raportointi: Palvelutapahtuman mitätöinti - body osion tiedot","WELDEV-68679 238, A2 Yhteistestausvalmiuden raportointi: Palvelutapahtuman mitätöinti - body osion tiedot",hanna-maija.naumanen@cgi.com,hanna-maija.naumanen@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,6425477
+1464313,Test,COMNIGI-58284,Testataan asiakirjojen muodostus vanhentuneella asiakirjavarmenteella,Vanhentunut allekirjoitusvarmenne,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,6381764
+1464304,Test,COMNIGI-58285,"Testataan, että kun merkintä siirretään vanhalta asiakirjalta uudelle asiakirjalle, ei uutta asiakirjaa muodosteta ennen kuin edellisen asiakirjan korjaus on arkistoitu onnistuneesti.
+
+Siirto tapahtuu seuraavasti:
+
+1. Merkintä on asiakirjalla 1
+
+2. Korjataan asiakirjaa 1 niin, että merkintä yksinkertasesti poistetaan asiakirjalta
+
+3. Luodaan kokonaan uusi asiakirja 2, johon merkintä tehdään
+
+Testitapaus varmistaa, että vaihetta 3 ei suoriteta ennen kuin vaihe 2 on suoritettu loppuun saakka.","Merkinnän siirto toiselle asiakirjalle, poiston odotus",arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Luonnos,,,Test: Automated,,6758081
+1464382,Test,COMNIGI-58287,"*Kuvaus:* Potilastiedon arkiston Kertomus ja lomakkeet V 5.11 s.23
+
+”Tietotyyppioppaassa dokumentoidun mukaisesti henkilötunnuksen esittämisen osalta muuten pakollista displayName-attribuuttia ei käytetä.”
+
+Jira:[WELDEV-68678|https://jira.cgisaas.fi/browse/WELDEV-68678]237, A1 Yhteistestausvalmiuden raportointi: Palvelutapahtuma-asiakirjan potilastiedot","WELDEV-68678 237, A1 Yhteistestausvalmiuden raportointi: Palvelutapahtuma-asiakirjan potilastiedot",hanna-maija.naumanen@cgi.com,hanna-maija.naumanen@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,,,6425475
+1464351,Test,COMNIGI-58265,"Mahdollistetaan ostopalveluvaltuutukseen liittyvän palvelutapahtuman mitätöinti.
+
+JIRA:
+
+[COMNIGI-6347|https://proactioneu.ent.cgi.com/jira/browse/COMNIGI-6347]Ostopalveluun liittyvän kontekstifragmentin mitätöinti ei onnistu",COMNIGI-6347 Ostopalveluun liittyvän kontekstifragmentin mitätöinti ei onnistu,juhani.pakanen@cgi.com,juhani.pakanen@cgi.com,Medium,HealthWeb Edustakanta,Valmis katselmoitavaksi,,,Test: Automated,,6713399
+1464373,Test,COMNIGI-58266,Jos potilaan ostopalveluvaltuutus vaihdetaan rekisteritasoisesta potilaskohtaiseksi tai toisinpäin niin päivitetään ostopalveluvaltuutuksen tyyppi myös Edustakanna tietokantaan. Päivitys tehdään kaikille kyseiseen palvelutapahtumaan liittyviin palvelutapahtuma- ja hoitoasiakirjoihin liittyviin tietokantariveihin.,COMNIGI-13474 Edustakanta ei päivitä ostopalveluvaltuutuksen tyyppiä omaan tietokantaansa,juhani.pakanen@cgi.com,juhani.pakanen@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,6713071
+1464391,Test,COMNIGI-58264,Testataan väestökohtaisen ostopalveluvaltuutusasiakirjan muodostus ja arkistointi.,Väestökohtaisen ostopalveluvaltuutuksen muodostus ja arkistointi,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,4665282
+1464400,Test,COMNIGI-58262,"Testataan, että tupla-arkistoinnin havaitseminen toimii oikein.",Tupla-arkistointi,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,5154944
+1464427,Test,COMNIGI-58263,"Testataan, että asiakirjalle tulee oikeat templateId-tiedot",TemplateId,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,5199394
+6330231,Test,COMNIGI-58257,"Testataan, että viitehaku palauttaa näkymäkoodin.",Näkymäkoodi,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,4966106
+6381515,Test,COMNIGI-58259,Jira:[COMNIGI-16192|https://proactioneu.ent.cgi.com/jira/browse/COMNIGI-16192],COMNIGI-16192 Sisääntulevassa TLS-kättelyssä sallituksi rajatummat asiakasvarmenteet,katri.lamminen@cgi.com,katri.lamminen@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,"Step 1: esim. openssl s_client -connect localhost:9444
+
+Step 3: esim. openssl s_client -connect localhost:9444
+
+Step 4: komentorivillä certmgr-add-cert-role
+
+Step 5: esim. openssl s_client -connect localhost:9444",,,6774405
+6381516,Test,COMNIGI-58258,"Testataan, että asiakirja voidaan korjata sen jälkeen, kun aktiivinen rekisterinpitäjä on vaihdettu arkistossa ja perusjärjestelmä lähettää fragmentin uuden version uudella rekisterinpitäjätiedolla.",Asiakirjan korjaus rekisterinpitäjän vaihdon jälkeen.,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,4641612
+6316425,Test,COMNIGI-58256,Testataan luovutusilmoitusten lähetys PTJ-rajapinnan kautta haetuista asiakirjoista.,Luovutusilmoitusten lähetys,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Luonnos,,,,,6310892
+6316427,Test,COMNIGI-58268,Henkilötunnuksen vaihdon yhteydessä ei päivitetä ostopalveluna tuotettuja asiakirjoja.,Hetun vaihdon esto ostopalvelutiedoille,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,5890676
+6316424,Test,COMNIGI-58269,Testataan palvelutapahtuma-asiakirjan muodostus ja arkistointi synkronisesti.,Palvelutapahtuman synkroninen arkistointi,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,5889830
+6316426,Test,COMNIGI-58270,"Tarkastetaan, että järjestelmä käyttää asiakirjan kokoa rajoittavaa asetusta.",Asiakirjan maksimikoko,arto.huusko@cgi.com,arto.huusko@cgi.com,Medium,HealthWeb Edustakanta,Hyväksytty,,,Test: Automated,,6336834
+6333243,,,,,,,,,,,,,,
+6381518,,,,,,,,,,,,,,
+6381519,,,,,,,,,,,,,,
+1556579,,,,,,,,,,,,,,
+2098928,,,,,,,,,,,,,,
+1830512,,,,,,,,,,,,,,
+1466030,,,,,,,,,,,,,,
+1830695,,,,,,,,,,,,,,
+1556757,,,,,,,,,,,,,,
+1556619,,,,,,,,,,,,,,
+1830437,,,,,,,,,,,,,,
+2098937,,,,,,,,,,,,,,
+2098973,,,,,,,,,,,,,,
+2098991,,,,,,,,,,,,,,
+2099809,,,,,,,,,,,,,,
+2099791,,,,,,,,,,,,,,
+1464333,,,,,,,,,,,,,,
+1464268,,,,,,,,,,,,,,
+1464409,,,,,,,,,,,,,,
+1582018,,,,,,,,,,,,,,
+1464362,,,,,,,,,,,,,,
+1464418,,,,,,,,,,,,,,
+1464187,,,,,,,,,,,,,,
+1464436,,,,,,,,,,,,,,
+1464460,,,,,,,,,,,,,,
+6330232,,,,,,,,,,,,,,
+6330221,,,,,,,,,,,,,,
+6330252,,,,,,,,,,,,,,
+6351782,,,,,,,,,,,,,,
+6351781,,,,,,,,,,,,,,
+6351791,,,,,,,,,,,,,,
+6333150,,,,,,,,,,,,,,
+6333159,,,,,,,,,,,,,,
+2098982,,,,,,,,,,,,,,
+2099000,,,,,,,,,,,,,,
+1463979,,,,,,,,,,,,,,
+1464246,,,,,,,,,,,,,,
+6330230,,,,,,,,,,,,,,
+6330228,,,,,,,,,,,,,,
+6330255,,,,,,,,,,,,,,
+6329943,,,,,,,,,,,,,,
+2099800,,,,,,,,,,,,,,
